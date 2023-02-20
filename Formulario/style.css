@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+:root {
+    --cor-texto: #ffffff;
+    --cor-fundo: #18122B;
+    --cor-campotexto: #8075a7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#titulo {
+    font-family: 'Montserrat';
+    color: var(--cor-texto);
+    margin-left: 7%;
+}
+
+#subtitulo {
+    font-family: 'Montserrat';
+    color: var(--cor-texto);
+    margin-left: 10%;
+}
+
+fieldset {
+    border: 0;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    font-family: 'Montserrat';
+    font-size: 1em;
+    color: var(--cor-texto);
+    margin-left: 36%;
+    margin-top: 2%;
+    justify-content: center;
+}
+
+input, select,  textarea, button{
+    border-radius: 5px;
+}
+
+.grupo:before, .grupo:after {
+    display: table;
+}
+
+.campo {
+    margin-bottom: 2em;
+}
+
+.campo label {
+    margin-bottom: 1em;
+    color: var(--cor-campotexto);
+    display: block;
+}
+
+fieldset.grupo .campo {
+    float: left;
+    margin-right: 4em;
+}
+
+.campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea {
+    padding: 0.2em;
+    border: 1px solid var(--cor-texto);
+    box-shadow: 2px 2px 2px #000000;
+    display: block;
+}
+
+.campo select option {
+    padding-right: 1em;
+}
+
+.campo textarea {
+    padding: 50px;
+}
+
+.campo input:focus, .campo select:focus, .campo textarea:focus {
+    background: #9087a8;
+}
+
+.botao {
+    font-size: 1.2em;
+    background-color: #8075a7;
+    border: 0;
+    margin-bottom: 1em;
+    color: var(--cor-texto);
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px #000000;
+    text-shadow: 1px 1px 1px #000000;
+    margin-left: 16%;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.botao:hover {
+    background: #191722;
+    box-shadow: 4px 4px 4px #000000;
+    text-shadow: none;
+}
+
+#check {
+    margin-bottom: 1em;
+    color: var(--cor-campotexto);
+    display: block;
+}
